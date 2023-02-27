@@ -3,7 +3,7 @@ from time import sleep
 
 
 #Enter The Homepage Of The Channel You Want To Check
-channel_url = 'https://www.youtube.com/@LofiGirl'
+channel_url = ''
 
 
 while True:
