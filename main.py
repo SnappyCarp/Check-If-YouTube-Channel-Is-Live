@@ -1,12 +1,12 @@
 import requests
+from time import sleep
 
 
 #Enter The Homepage Of The Channel You Want To Check
 channel_url = 'https://www.youtube.com/@LofiGirl'
 
 
-
-def IsStreaming():
+while True:
     try:
         print('Checking If Channel Is Live')
         content = requests.get(channel_url).text
@@ -18,6 +18,5 @@ def IsStreaming():
             print("Channel Isn't Live")
     except Exception as error:
         print(f'Error {error}')
-
-
-IsStreaming()
+    
+    sleep(3)
