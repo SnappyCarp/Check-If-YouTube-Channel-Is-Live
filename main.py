@@ -10,9 +10,9 @@ while True:
     try:
         print('Checking If Channel Is Live')
         content = requests.get(channel_url).text
-        EncodedContent = str(content).encode("ascii", "ignore")
+        EC = str(content).encode("ascii", "ignore")
 
-        if 'hqdefault_live.jpg' in EncodedContent.decode():
+        if 'hqdefault_live.jpg' in EC.decode():
             print('Channel Is Live')
         else:
             print("Channel Isn't Live")
