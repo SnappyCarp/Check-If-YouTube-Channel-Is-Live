@@ -2,7 +2,7 @@ import requests
 from time import sleep
 
 
-#Enter The Homepage Of The Channel You Want To Check
+#Enter The Homepage Of The Channel You Want To Check(ie https://www.youtube.com/@LofiGirl)
 channel_url = ''
 
 
